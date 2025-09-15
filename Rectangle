@@ -1,0 +1,48 @@
+public class Rectangle
+{
+    //Instance data - encapsulation
+    private double length;
+    private double width;
+    
+    //Constructor
+    public Rectangle(double num1, double num2)
+    {
+        length = num1;
+        width = num2;
+    }
+    
+    //Accessor method 
+    public double getLength(){ return length; }
+    public double getWidth(){ return width; }
+    
+    //Mutator method
+    public void setLength(double length)
+    {
+        this.length = length; 
+    }
+    
+    public void setWidth(double width)
+    {
+        this.width = width; 
+    }
+    
+    //toString Method 
+    public String toString()
+    {
+        return getLength() + " Length  \n " + getWidth() + "  Width  \n"; 
+    }
+    
+    public double getArea()
+    {
+        double area;
+        area = this.length * this.width;
+        return area;
+    }
+    
+    public double getPerimeter()
+    {
+        double perimeter;
+        perimeter = 2*(this.length + this.width);
+        return perimeter;
+    }
+}
