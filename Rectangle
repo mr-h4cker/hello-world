@@ -32,17 +32,5 @@ public class Rectangle
         return getLength() + " Length  \n " + getWidth() + "  Width  \n"; 
     }
     
-    public double getArea()
-    {
-        double area;
-        area = this.length * this.width;
-        return area;
-    }
-    
-    public double getPerimeter()
-    {
-        double perimeter;
-        perimeter = 2*(this.length + this.width);
-        return perimeter;
     }
 }
